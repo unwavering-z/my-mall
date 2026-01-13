@@ -1,49 +1,49 @@
-/* --- 1. 布局核心：隐藏右侧 "On this page" 目录 --- */
+/* 1. 彻底干掉右侧 "On this page" 目录，不让它占地方 */
 aside.right-sidebar {
     display: none !important;
 }
 
-/* --- 2. 手机端产品双列排版 (关键修复) --- */
-.sl-markdown-content img {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 8px;
+/* 2. 优化主要内容区域的宽度限制，让它更开阔 */
+.main-pane {
+    max-width: 100% !important;
 }
 
-@media (max-width: 50rem) {
-  .card-grid {
-    grid-template-columns: 1fr 1fr !important;
-    gap: 0.5rem !important;
-    padding: 0 5px !important;
-  }
-}
-
-/* --- 3. 首页头图全屏 (针对 div.full-width-banner) --- */
+/* 3. 首页头图全屏校准 (解决图 32 变形问题) */
 .full-width-banner {
     width: 100vw !important;
     margin-left: calc(50% - 50vw) !important;
     margin-top: -1.5rem !important;
+    overflow: hidden;
 }
 
 .full-width-banner img {
     width: 100% !important;
     height: auto !important;
+    object-fit: contain !important; /* 确保图片完整显示 */
     display: block !important;
 }
 
-/* --- 4. 视觉净化：隐藏页面 H1 标题和底部 Next 按钮 --- */
-main h1 { display: none !important; }
-.pagination { display: none !important; }
-
-/* --- 5. 商城细节：价格和侧边栏 --- */
-.price {
-    color: #e4393c !important;
-    font-size: 1.1rem !important;
-    font-weight: bold;
-    margin: 5px 0 !important;
+/* 4. 隐藏多余的标题、面包屑导航和底部切换按钮 */
+main h1, 
+.sl-breadcrumbs, 
+.pagination,
+.mobile-preferences { 
+    display: none !important; 
 }
 
-.sidebar-content {
-    background-color: #f8f9fa !important;
-    border-right: 1px solid #eee !important;
+/* 5. 手机端产品双列强制排版 */
+@media (max-width: 50rem) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
+    padding: 0 10px !important;
+  }
+}
+
+/* 6. 价格样式升级 */
+.price {
+    color: #e4393c !important;
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    margin: 8px 0 !important;
 }
