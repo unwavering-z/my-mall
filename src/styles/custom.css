@@ -1,0 +1,14 @@
+/* 让手机端产品图更大、比例统一 */
+.sl-markdown-content img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 强制手机端显示两列 */
+@media (max-width: 50rem) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
+  }
+}
