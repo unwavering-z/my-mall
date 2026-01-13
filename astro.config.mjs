@@ -2,13 +2,15 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  // 在 Astro 5.x 中，这已经是正式功能，直接这样写即可
+  // 1. 强制设置尾随斜杠行为，解决 404 常见病根
+  trailingSlash: 'always',
+  
+  // 2. 开启视图过渡
   viewTransitions: true,
   
   integrations: [
     starlight({
-      title: '2026端午展示',
-      // 这里是 Starlight 的基础配置
+      title: '2026春节展示',
       sidebar: [
         {
           label: '产品分类',
