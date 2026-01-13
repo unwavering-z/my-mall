@@ -1,4 +1,24 @@
-/* 1. 强制图片横向撑满屏幕，不留一丝白边 */
+/* --- 1. 布局核心：隐藏右侧 "On this page" 目录 --- */
+aside.right-sidebar {
+    display: none !important;
+}
+
+/* --- 2. 手机端产品双列排版 (关键修复) --- */
+.sl-markdown-content img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 50rem) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
+    padding: 0 5px !important;
+  }
+}
+
+/* --- 3. 首页头图全屏 (针对 div.full-width-banner) --- */
 .full-width-banner {
     width: 100vw !important;
     margin-left: calc(50% - 50vw) !important;
@@ -11,20 +31,19 @@
     display: block !important;
 }
 
-/* 2. 隐藏首页自带的 H1 标题（2026年春节团购产品字样） */
-main h1 {
-    display: none !important;
-}
+/* --- 4. 视觉净化：隐藏页面 H1 标题和底部 Next 按钮 --- */
+main h1 { display: none !important; }
+.pagination { display: none !important; }
 
-/* 3. 侧边栏样式美化：更像手机商城分类 */
-.sidebar-content {
-    background-color: #f8f9fa !important;
-}
-
-/* 4. 价格显示优化 */
+/* --- 5. 商城细节：价格和侧边栏 --- */
 .price {
     color: #e4393c !important;
     font-size: 1.1rem !important;
     font-weight: bold;
     margin: 5px 0 !important;
+}
+
+.sidebar-content {
+    background-color: #f8f9fa !important;
+    border-right: 1px solid #eee !important;
 }

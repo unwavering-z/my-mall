@@ -1,7 +1,6 @@
 ---
 title: 2026年春节团购
-description: 马年大吉 · 2026年春节团购产品展示
-# 必须删掉之前的 hero 字段，我们改用图片组件来实现“真全屏”
+# 不要在这里加 template: splash，否则侧边栏会消失
 ---
 
 import { Card, CardGrid, Badge } from '@astrojs/starlight/components';
@@ -12,22 +11,19 @@ import { Card, CardGrid, Badge } from '@astrojs/starlight/components';
 
 ## 春节自选礼册 · 感恩系列
 
-<CardGrid stagger>
+<CardGrid>
   <Card title="感恩册200型" icon="star">
     <div class="product-item">
-      ![感恩册200型](https://via.placeholder.com/400x400?text=200型产品图)
+      ![200型](https://via.placeholder.com/400x400?text=200型)
       <p class="price">团购价：￥200</p>
       <Badge text="顺丰包邮" variant="success" />
-      <Badge text="全国通用" variant="tip" />
     </div>
   </Card>
-
   <Card title="感恩册300型" icon="heart">
     <div class="product-item">
-      ![感恩册300型](https://via.placeholder.com/400x400?text=300型产品图)
+      ![300型](https://via.placeholder.com/400x400?text=300型)
       <p class="price">团购价：￥300</p>
       <Badge text="企业定制" variant="note" />
-      <Badge text="扫码自选" variant="tip" />
     </div>
   </Card>
 </CardGrid>
