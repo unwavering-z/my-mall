@@ -1,0 +1,17 @@
+{
+  "name": "my-product-showcase",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.28.0",
+    "@edgeone/astro": "^1.0.0",
+    "astro": "^4.12.0",
+    "sharp": "^0.33.0"
+  }
+}
