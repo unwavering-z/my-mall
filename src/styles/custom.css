@@ -12,3 +12,23 @@
     gap: 0.5rem !important;
   }
 }
+/* 1. 去掉卡片的阴影和背景，模仿图 8 的简洁感 */
+.card {
+    background-color: white !important;
+    border: 1px solid #eee !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+}
+
+/* 2. 让价格文字变成图 8 那种显眼的红色 */
+.product-item p {
+    color: #e4393c !important; /* 京东红，很接近图 8 */
+    font-size: 1.25rem !important;
+    margin: 8px 0 !important;
+}
+
+/* 3. 让图片充满卡片顶部 */
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #f5f5f5;
+}
