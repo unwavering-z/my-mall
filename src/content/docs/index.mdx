@@ -1,20 +1,33 @@
 ---
 title: 2026年春节团购产品
 description: 马年大吉 · 2026年春节团购产品展示
+# 使用 splash 模板可以隐藏侧边栏
 template: splash
 hero:
-  tagline: 距离2026年春节倒计时35天
   image:
-    # 引用你上传的马年大图
-    file: ../../assets/banner_2026.jpg
-  actions:
-    - text: 立即查看感恩册
-      link: /products/ganen/
-      icon: right-arrow
-      variant: primary
+    file: ../../assets/hero-banner.png
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, Badge } from '@astrojs/starlight/components';
 
-## 热门系列推荐
-...
+## 春节自选礼册 · 感恩系列
+
+<CardGrid stagger>
+  <Card title="感恩册200型" icon="star">
+    <div class="product-item">
+      ![感恩册200型](https://via.placeholder.com/400x400?text=200型产品图)
+      <p class="price">团购价：￥200</p>
+      <Badge text="顺丰包邮" variant="success" />
+      <Badge text="全国通用" variant="tip" />
+    </div>
+  </Card>
+
+  <Card title="感恩册300型" icon="heart">
+    <div class="product-item">
+      ![感恩册300型](https://via.placeholder.com/400x400?text=300型产品图)
+      <p class="price">团购价：￥300</p>
+      <Badge text="企业定制" variant="note" />
+      <Badge text="扫码自选" variant="tip" />
+    </div>
+  </Card>
+</CardGrid>

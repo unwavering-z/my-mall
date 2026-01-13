@@ -1,34 +1,48 @@
-/* 让手机端产品图更大、比例统一 */
+/* --- 第一部分：已有的手机端两列布局 --- */
 .sl-markdown-content img {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* 强制手机端显示两列 */
 @media (max-width: 50rem) {
   .card-grid {
     grid-template-columns: 1fr 1fr !important;
     gap: 0.5rem !important;
+    padding: 0 10px !important;
   }
 }
-/* 1. 去掉卡片的阴影和背景，模仿图 8 的简洁感 */
-.card {
-    background-color: white !important;
-    border: 1px solid #eee !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+
+/* --- 第二部分：新增的全屏头图美化 --- */
+
+/* 1. 强制头图全屏并贴顶 */
+.hero-image {
+    width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-top: -1.5rem !important;
 }
 
-/* 2. 让价格文字变成图 8 那种显眼的红色 */
-.product-item p {
-    color: #e4393c !important; /* 京东红，很接近图 8 */
-    font-size: 1.25rem !important;
+.hero-image img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+}
+
+/* 2. 隐藏首页多余的标题文字，模仿图 8 的纯净感 */
+[data-template="splash"] .hero h1 {
+    display: none !important;
+}
+
+/* 3. 价格标签样式：京系红色 */
+.price {
+    color: #e4393c !important;
+    font-size: 1.15rem !important;
+    font-weight: bold;
     margin: 8px 0 !important;
 }
 
-/* 3. 让图片充满卡片顶部 */
-.product-item img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #f5f5f5;
+/* 4. 去掉顶部白条（可选），让视觉更统一 */
+header.header {
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
