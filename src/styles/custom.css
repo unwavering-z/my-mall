@@ -1,48 +1,30 @@
-/* --- 第一部分：已有的手机端两列布局 --- */
-.sl-markdown-content img {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-@media (max-width: 50rem) {
-  .card-grid {
-    grid-template-columns: 1fr 1fr !important;
-    gap: 0.5rem !important;
-    padding: 0 10px !important;
-  }
-}
-
-/* --- 第二部分：新增的全屏头图美化 --- */
-
-/* 1. 强制头图全屏并贴顶 */
-.hero-image {
+/* 1. 强制图片横向撑满屏幕，不留一丝白边 */
+.full-width-banner {
     width: 100vw !important;
     margin-left: calc(50% - 50vw) !important;
     margin-top: -1.5rem !important;
 }
 
-.hero-image img {
+.full-width-banner img {
     width: 100% !important;
     height: auto !important;
-    max-height: none !important;
+    display: block !important;
 }
 
-/* 2. 隐藏首页多余的标题文字，模仿图 8 的纯净感 */
-[data-template="splash"] .hero h1 {
+/* 2. 隐藏首页自带的 H1 标题（2026年春节团购产品字样） */
+main h1 {
     display: none !important;
 }
 
-/* 3. 价格标签样式：京系红色 */
-.price {
-    color: #e4393c !important;
-    font-size: 1.15rem !important;
-    font-weight: bold;
-    margin: 8px 0 !important;
+/* 3. 侧边栏样式美化：更像手机商城分类 */
+.sidebar-content {
+    background-color: #f8f9fa !important;
 }
 
-/* 4. 去掉顶部白条（可选），让视觉更统一 */
-header.header {
-    border-bottom: none !important;
-    box-shadow: none !important;
+/* 4. 价格显示优化 */
+.price {
+    color: #e4393c !important;
+    font-size: 1.1rem !important;
+    font-weight: bold;
+    margin: 5px 0 !important;
 }

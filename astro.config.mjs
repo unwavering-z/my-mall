@@ -5,12 +5,20 @@ export default defineConfig({
   integrations: [
     starlight({
       title: '2026年春节团购',
-      // 关键：告诉项目去哪里找你的自定义 CSS
       customCss: ['./src/styles/custom.css'],
       sidebar: [
+        // 手动定义品牌分类
         {
-          label: '产品分类',
-          autogenerate: { directory: 'products' },
+          label: '感恩册',
+          link: '/', // 首页即是感恩册
+        },
+        {
+          label: '悦享册',
+          link: '/products/yuexiang/', // 指向尚未创建的悦享册页面
+        },
+        {
+          label: '集祥礼',
+          link: '/products/jixiang/',
         },
       ],
     }),

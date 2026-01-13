@@ -1,14 +1,14 @@
 ---
-title: 2026年春节团购产品
+title: 2026年春节团购
 description: 马年大吉 · 2026年春节团购产品展示
-# 使用 splash 模板可以隐藏侧边栏
-template: splash
-hero:
-  image:
-    file: ../../assets/hero-banner.png
+# 必须删掉之前的 hero 字段，我们改用图片组件来实现“真全屏”
 ---
 
 import { Card, CardGrid, Badge } from '@astrojs/starlight/components';
+
+<div class="full-width-banner">
+  ![马年大吉](../../assets/hero-banner.png)
+</div>
 
 ## 春节自选礼册 · 感恩系列
 
