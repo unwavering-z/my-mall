@@ -1,6 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { docsSchema } from '@astrojs/starlight/schema';
 
-export collection const docs = defineCollection({
-	schema: docsSchema(),
-});
+// 修正后的语法：必须是 export const docs = ...
+export const collections = {
+	docs: defineCollection({ schema: docsSchema() }),
+};
