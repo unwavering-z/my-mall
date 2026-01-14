@@ -64,8 +64,9 @@ body {
 /* 双列网格结构 */
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 强制两列 */
     gap: 10px;
+    align-items: start;
 }
 
 .product-card {
@@ -73,6 +74,14 @@ body {
     border-radius: 8px;
     overflow: hidden;
     background: #fff;
+}
+
+/* 确保链接不会破坏布局 */
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* 核心：让 a 标签像容器一样工作 */
+    width: 100%;
 }
 
 .product-card img {
@@ -96,5 +105,5 @@ body {
     color: #e4393c;
     font-weight: bold;
     margin: 0;
-    font-size: 9px;
+    font-size: 12px;
 }
