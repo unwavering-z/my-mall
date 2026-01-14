@@ -27,16 +27,49 @@ const { product } = Astro.props;
     <button class="back-btn" onclick="history.back()">返回</button>
 
     <style>
-        body { margin: 0; background: #fff; }
-        .detail-container img { width: 100%; height: auto; display: block; }
-        .back-btn {
-            position: fixed; right: 20px; bottom: 50px;
-            width: 60px; height: 60px;
-            background-color: #28a745; color: white;
-            border-radius: 50%; border: none;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            font-size: 16px; z-index: 1000;
+    body { 
+        margin: 0 auto; /* 居中 */
+        background: #fff; 
+        max-width: 480px; /* 保持和首页一样的模拟宽度 */
+        position: relative;
+        min-height: 100vh;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    
+    .detail-container img { 
+        width: 100%; 
+        height: auto; 
+        display: block; 
+    }
+
+    .back-btn {
+        position: fixed; 
+        /* 计算公式：屏幕中心 + 模拟手机宽度的一半 - 按钮距离边缘的距离 */
+        left: calc(50% + 160px); 
+        bottom: 50px;
+        width: 60px; 
+        height: 60px;
+        background-color: #28a745; 
+        color: white;
+        border-radius: 50%; 
+        border: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        font-size: 16px; 
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    /* 当屏幕本身就小于 480px（真手机）时的适配 */
+    @media (max-width: 480px) {
+        body { 
+            max-width: 100%; 
+            box-shadow: none; 
         }
-    </style>
+        .back-btn {
+            left: auto;
+            right: 20px; /* 回到手机屏幕右侧 */
+        }
+    }
+</style>
 </body>
 </html>

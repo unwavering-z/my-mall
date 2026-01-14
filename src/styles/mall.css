@@ -1,9 +1,15 @@
 /* src/styles/mall.css */
 body {
-    margin: 0;
+    margin: 0 auto;        /* 页面居中 */
     padding: 0;
     font-family: sans-serif;
     background-color: #f5f5f5;
+    
+    /* --- 核心修改：强制手机宽度 --- */
+    max-width: 480px;      /* 模拟典型大屏手机宽度 */
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* 给两侧加点阴影，看起来更像手机 */
+    position: relative;
 }
 
 /* 顶部 Banner 真全屏 */
