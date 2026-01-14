@@ -18,11 +18,6 @@ const displayProducts = productData.items.filter(item => item.brandId === curren
     <title>{currentBrand.name} - 2026春节团购</title>
 </head>
 <body>
-    ---
-// 已经在顶部 import 了 productData
-const { festival } = productData;
----
-
 <div class="festival-banner" id="countdown-banner">
   <span class="festival-name">🏮 {festival.name}</span>
   <span class="countdown-text">
