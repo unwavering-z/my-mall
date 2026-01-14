@@ -2,7 +2,7 @@
 // 1. 导入你的“账本”数据
 import productData from '../data/products.json';
 import '../styles/mall.css';
-
+const { festival } = productData;
 // 2. 定义当前品牌（首页默认是感恩册）
 const currentBrandId = "ganen";
 const currentBrand = productData.brands.find(b => b.id === currentBrandId);
