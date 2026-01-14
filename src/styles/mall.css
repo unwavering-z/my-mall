@@ -28,19 +28,24 @@ body {
     flex-direction: column;
 }
 
+/* 侧边栏基础样式 */
 .side-menu a {
-    padding: 15px 5px;
+    padding: 18px 5px;
     text-align: center;
     text-decoration: none;
-    color: #666;
+    color: #333; /* 默认深色字 */
     font-size: 14px;
-    border-bottom: 1px solid #fafafa;
+    background-color: #f8f8f8; /* 未选中时带一点灰色 */
+    border-bottom: 1px solid #eee;
+    transition: all 0.2s;
 }
 
+/* 选中状态：变成白色背景 + 橙色左边框（模拟图 8） */
 .side-menu a.active {
-    background-color: #ff9800;
-    color: white;
+    background-color: #fff !important;
+    color: #ff9800 !important;
     font-weight: bold;
+    border-left: 4px solid #ff9800; /* 增加左侧粗线条 */
 }
 
 /* 右侧产品区域 */
