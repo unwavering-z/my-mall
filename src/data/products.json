@@ -1,0 +1,30 @@
+{
+  "brands": [
+    { "id": "ganen", "name": "感恩册", "slug": "index" },
+    { "id": "yuexiang", "name": "悦享册", "slug": "yuexiang" },
+    { "id": "jixiang", "name": "集祥礼", "slug": "jixiang" }
+  ],
+  "items": [
+    {
+      "brandId": "ganen",
+      "name": "感恩册200型",
+      "price": "200元",
+      "image": "/images/ganen/ga200.png",
+      "detail": "/ga200-detail"
+    },
+    {
+      "brandId": "ganen",
+      "name": "感恩册300型",
+      "price": "300元",
+      "image": "/images/ganen/ga300.png",
+      "detail": "/ga300-detail"
+    },
+    {
+      "brandId": "yuexiang",
+      "name": "悦享册500型",
+      "price": "500元",
+      "image": "/images/yuexiang/yx500.png",
+      "detail": "/yx500-detail"
+    }
+  ]
+}
