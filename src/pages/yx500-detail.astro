@@ -1,0 +1,50 @@
+---
+// src/pages/ga200-detail.astro
+import '../styles/mall.css';
+---
+
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>悦享500型 - 详情</title>
+  </head>
+  <body>
+    <div class="detail-container">
+      <img src="/images/ganen/yx500-big.jpg" alt="产品详情图" class="detail-img" />
+    </div>
+
+    <button class="back-btn" onclick="history.back()">返回</button>
+
+    <style>
+      .detail-container {
+        width: 100%;
+        background-color: #fff;
+      }
+      .detail-img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      /* 浮动返回按钮样式 */
+      .back-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+        width: 60px;
+        height: 60px;
+        background-color: #28a745; /* 绿色 */
+        color: white;
+        border-radius: 50%; /* 圆形 */
+        border: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      }
+    </style>
+  </body>
+</html>

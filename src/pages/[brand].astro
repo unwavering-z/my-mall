@@ -1,14 +1,27 @@
 ---
-// 1. 导入你的“账本”数据
+// src/pages/[brand].astro
 import productData from '../data/products.json';
 import '../styles/mall.css';
 
-// 2. 定义当前品牌（首页默认是感恩册）
-const currentBrandId = "yuexiang";
-const currentBrand = productData.brands.find(b => b.id === currentBrandId);
+// 1. 告诉 Astro 根据 JSON 数据生成哪些路径
+export async function getStaticPaths() {
+  const { brands } = productData;
+  // 排除首页(index)，为其他品牌生成独立页面
+  return brands
+    .filter(brand => brand.slug !== 'index')
+    .map(brand => ({
+      params: { brand: brand.slug }, // URL 里的名字，如 /yuexiang
+      props: { brandId: brand.id }   // 传给页面的品牌 ID
+    }));
+}
 
-// 3. 自动筛选出属于“感恩册”的产品
-const displayProducts = productData.items.filter(item => item.brandId === currentBrandId);
+// 2. 获取当前页面的参数
+const { brand } = Astro.params;
+const { brandId } = Astro.props;
+
+// 3. 筛选当前品牌和产品数据
+const currentBrand = productData.brands.find(b => b.id === brandId);
+const displayProducts = productData.items.filter(item => item.brandId === brandId);
 ---
 
 <html lang="zh-cn">
@@ -24,10 +37,10 @@ const displayProducts = productData.items.filter(item => item.brandId === curren
 
     <main class="mall-container">
         <nav class="side-menu">
-            {productData.brands.map((brand) => (
-                <a href={`/${brand.slug === 'index' ? '' : brand.slug}`} 
-                   class={brand.id === currentBrandId ? "active" : ""}>
-                    {brand.name}
+            {productData.brands.map((b) => (
+                <a href={b.slug === 'index' ? '/' : `/${b.slug}`} 
+                   class={b.id === brandId ? "active" : ""}>
+                    {b.name}
                 </a>
             ))}
         </nav>

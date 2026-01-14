@@ -2,7 +2,9 @@
   "brands": [
     { "id": "ganen", "name": "感恩册", "slug": "index" },
     { "id": "yuexiang", "name": "悦享册", "slug": "yuexiang" },
-    { "id": "jixiang", "name": "集祥礼", "slug": "jixiang" }
+    { "id": "jixiang", "name": "集祥礼", "slug": "jixiang" },
+    { "id": "fuli", "name": "福礼", "slug": "fuli" },
+    { "id": "zhongyi", "name": "中意礼", "slug": "zhongyili" }
   ],
   "items": [
     {
