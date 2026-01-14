@@ -53,7 +53,7 @@ const displayProducts = productData.items.filter(item => item.brandId === brandI
 <style define:vars={{ themeColor: festival.themeColor }}>
   /* --- 顶部公告条样式 --- */
   .festival-banner {
-    background: var(--themeColor); /* 自动引用 JSON 里的 themeColor */
+    background: var(--themeColor);
     color: white;
     padding: 8px 15px;
     display: flex;
@@ -67,11 +67,19 @@ const displayProducts = productData.items.filter(item => item.brandId === brandI
   .festival-name { font-weight: bold; }
   #days-count { font-size: 16px; color: #ffeb3b; margin: 0 2px; }
 
-  /* --- 侧边栏高亮颜色同步 --- */
-  /* 使用 :global 是因为侧边栏样式可能在 mall.css 中定义，这里强制覆盖 */
-  :global(.side-menu a.active) {
+  /* --- 侧边栏高亮精准修复 --- */
+  
+  /* 1. 改变左侧小窄条的颜色 (假设它是通过 ::before 或 border 实现的) */
+  :global(.side-menu a.active::before) {
     background-color: var(--themeColor) !important;
-    border-color: var(--themeColor) !important;
+  }
+  
+  /* 2. 如果你的窄条是用左边框 border-left 实现的，用这一行 */
+  :global(.side-menu a.active) {
+    border-left-color: var(--themeColor) !important;
+    background-color: transparent !important; /* 去掉大面积背景色 */
+    color: var(--themeColor) !important;       /* 文字也变成主题色，不选橙色 */
+    font-weight: bold;
   }
 </style>
     <header class="hero-banner">
