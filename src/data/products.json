@@ -1,8 +1,8 @@
 {
   "festival": {
-    "name": "2026农历马年春节",
-    "targetDate": "2026-02-17",
-    "themeColor": "#e4393c"
+  "name": "2026端午粽情",
+  "targetDate": "2026-06-19",
+  "themeColor": "#2e7d32"
   },
   "brands": [
     { "id": "ganen", "name": "感恩册", "slug": "index" },
