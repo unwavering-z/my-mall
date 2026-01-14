@@ -35,7 +35,7 @@ const displayProducts = productData.items.filter(item => item.brandId === curren
         <section class="product-grid">
             <div class="grid">
                 {displayProducts.map((product) => (
-                    <a href={/details/${product.detail}} class="product-link">
+                    <a href={`/details/${product.detail}`} class="product-link">
                         <div class="product-card">
                             <img src={product.image} alt={product.name} />
                             <div class="info">
