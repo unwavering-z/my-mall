@@ -1,0 +1,51 @@
+---
+// src/pages/index.astro
+import '../styles/mall.css';
+---
+
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2026年春节团购产品展示</title>
+  </head>
+  <body>
+    <header class="hero-banner">
+      <img src="/src/assets/hero-banner.png" alt="马年大吉" />
+    </header>
+
+    <main class="mall-container">
+      <nav class="side-menu">
+        <a href="#" class="active">感恩册</a>
+        <a href="#">悦享册</a>
+        <a href="#">集祥礼</a>
+        <a href="#">福礼</a>
+        <a href="#">中意礼</a>
+        <a href="#">坚果零食</a>
+      </nav>
+
+      <section class="product-grid">
+        <div class="category-title">感恩册系列</div>
+        
+        <div class="grid">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/400x400?text=200型" alt="200型" />
+            <div class="info">
+              <h3>感恩册200型</h3>
+              <p class="price">200元</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://via.placeholder.com/400x400?text=300型" alt="300型" />
+            <div class="info">
+              <h3>感恩册300型</h3>
+              <p class="price">300元</p>
+            </div>
+          </div>
+          
+          </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+/* src/styles/mall.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* 顶部 Banner 真全屏 */
+.hero-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 主体容器布局 */
+.mall-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* 左侧品牌菜单：固定宽度 */
+.side-menu {
+    width: 85px;
+    background-color: #fff;
+    border-right: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu a {
+    padding: 15px 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    border-bottom: 1px solid #fafafa;
+}
+
+.side-menu a.active {
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+}
+
+/* 右侧产品区域 */
+.product-grid {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.category-title {
+    font-weight: bold;
+    padding: 10px 0;
+    color: #333;
+}
+
+/* 双列网格结构 */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.product-card {
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.product-card .info {
+    padding: 8px;
+    text-align: center;
+}
+
+.product-card h3 {
+    font-size: 13px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.product-card .price {
+    color: #e4393c;
+    font-weight: bold;
+    margin: 0;
+}
