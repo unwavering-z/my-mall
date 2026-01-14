@@ -18,6 +18,46 @@ const displayProducts = productData.items.filter(item => item.brandId === curren
     <title>{currentBrand.name} - 2026春节团购</title>
 </head>
 <body>
+    ---
+// 已经在顶部 import 了 productData
+const { festival } = productData;
+---
+
+<div class="festival-banner" id="countdown-banner">
+  <span class="festival-name">🏮 {festival.name}</span>
+  <span class="countdown-text">
+    距节日还有 <strong id="days-count">--</strong> 天
+  </span>
+</div>
+
+<script define:vars={{ targetDate: festival.targetDate }}>
+  function updateCountdown() {
+    const target = new Date(targetDate).getTime();
+    const now = new Date().getTime();
+    const gap = target - now;
+    
+    const d = Math.floor(gap / (1000 * 60 * 60 * 24));
+    document.getElementById('days-count').innerText = d > 0 ? d : 0;
+  }
+  updateCountdown();
+</script>
+
+<style>
+  .festival-banner {
+    background: #e4393c; /* 默认红色，也可以用 {festival.themeColor} */
+    color: white;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+  }
+  .festival-name { font-weight: bold; }
+  #days-count { font-size: 16px; color: #ffeb3b; margin: 0 2px; }
+</style>
     <header class="hero-banner">
         <img src="/hero-banner.png" alt="马年大吉" />
     </header>
