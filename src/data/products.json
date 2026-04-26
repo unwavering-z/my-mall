@@ -5,20 +5,186 @@
   "themeColor": "#2e7d32"
   },
   "brands": [
-    { "id": "zongli", "name": "品牌粽礼", "slug": "zongli" },
-    { "id": "ganen", "name": "感恩册", "slug": "index" },
+    { "id": "zongli", "name": "品牌粽礼", "slug": "index" },
+    { "id": "ganen", "name": "感恩册", "slug": "ganen" },
     { "id": "yuexiang", "name": "悦享册", "slug": "yuexiang" },
     { "id": "jixiang", "name": "集祥礼", "slug": "jixiang" },
     { "id": "fuli", "name": "福礼", "slug": "fuli" },
-    { "id": "zhongyi", "name": "中意礼", "slug": "zhongyili" }  
+    { "id": "zhongyi", "name": "中意礼", "slug": "zhongyili" },
+    
+    { "id": "jgls", "name": "坚果零食", "slug": "jgls" },
+    { "id": "shengxian", "name": "生鲜熟食", "slug": "shengxian" },
+    { "id": "mmly", "name": "米面粮油", "slug": "mmly" },
+    { "id": "yadan", "name": "鸭蛋礼盒", "slug": "yadan" }
   ],
   "items": [
     {
       "brandId": "zongli",
       "name": "五芳斋",
-      "price": "59-399元",
+      "price": "59-398元",
       "image": "/images/zongli/wfz.png",
       "detail": "wfz"
+    },
+    {
+      "brandId": "zongli",
+      "name": "星巴克",
+      "price": "198元",
+      "image": "/images/zongli/xbk.png",
+      "detail": "xbk"
+    },
+    {
+      "brandId": "zongli",
+      "name": "元祖",
+      "price": "198-458元",
+      "image": "/images/zongli/yz.png",
+      "detail": "yz"
+    },
+    {
+      "brandId": "zongli",
+      "name": "锋味派",
+      "price": "168-398元",
+      "image": "/images/zongli/fwp.png",
+      "detail": "fwp"
+    },
+    {
+      "brandId": "zongli",
+      "name": "榴芒一刻",
+      "price": "39.9-238元",
+      "image": "/images/zongli/lmyk.png",
+      "detail": "lmyk"
+    },
+    {
+      "brandId": "zongli",
+      "name": "香港美心",
+      "price": "188-488元",
+      "image": "/images/zongli/mx.png",
+      "detail": "mx"
+    },
+    {
+      "brandId": "zongli",
+      "name": "香港锦华",
+      "price": "68-428元",
+      "image": "/images/zongli/jh.png",
+      "detail": "jh"
+    },
+    {
+      "brandId": "zongli",
+      "name": "稻香村",
+      "price": "39-359元",
+      "image": "/images/zongli/dxc.png",
+      "detail": "dxc"
+    },
+    {
+      "brandId": "zongli",
+      "name": "广州酒家",
+      "price": "68-398元",
+      "image": "/images/zongli/gzjj.png",
+      "detail": "gzjj"
+    },
+    {
+      "brandId": "zongli",
+      "name": "紫光园",
+      "price": "68-258元",
+      "image": "/images/zongli/zgy.png",
+      "detail": "zgy"
+    },
+    {
+      "brandId": "zongli",
+      "name": "大董",
+      "price": "158-998元",
+      "image": "/images/zongli/dd.png",
+      "detail": "dd"
+    },
+    {
+      "brandId": "zongli",
+      "name": "诸老大",
+      "price": "69-458元",
+      "image": "/images/zongli/zld.png",
+      "detail": "zld"
+    },
+    {
+      "brandId": "zongli",
+      "name": "故宫朕的心意",
+      "price": "199-299元",
+      "image": "/images/zongli/gg.png",
+      "detail": "gg"
+    },
+    {
+      "brandId": "zongli",
+      "name": "真真老老",
+      "price": "59-538元",
+      "image": "/images/zongli/zzll.png",
+      "detail": "zzll"
+    },
+    {
+      "brandId": "zongli",
+      "name": "荃盛",
+      "price": "65-458元",
+      "image": "/images/zongli/qs.png",
+      "detail": "qs"
+    },
+    {
+      "brandId": "zongli",
+      "name": "立家",
+      "price": "68-668元",
+      "image": "/images/zongli/lj.png",
+      "detail": "lj"
+    },
+    {
+      "brandId": "zongli",
+      "name": "良品铺子",
+      "price": "78-228元",
+      "image": "/images/zongli/lppz.png",
+      "detail": "lppz"
+    },
+    {
+      "brandId": "zongli",
+      "name": "三只松鼠",
+      "price": "88-288元",
+      "image": "/images/zongli/szss.png",
+      "detail": "szss"
+    },
+    {
+      "brandId": "zongli",
+      "name": "华美",
+      "price": "58-258元",
+      "image": "/images/zongli/hm.png",
+      "detail": "hm"
+    },
+    {
+      "brandId": "zongli",
+      "name": "知味观",
+      "price": "49-418元",
+      "image": "/images/zongli/zwg.png",
+      "detail": "zwg"
+    },
+    {
+      "brandId": "zongli",
+      "name": "红船",
+      "price": "78-318元",
+      "image": "/images/zongli/hc.png",
+      "detail": "hc"
+    },
+    {
+      "brandId": "zongli",
+      "name": "COSTA",
+      "price": "168-228元",
+      "image": "/images/zongli/costa.png",
+      "detail": "costa"
+    },
+    {
+      "brandId": "zongli",
+      "name": "同庆楼",
+      "price": "68-288元",
+      "image": "/images/zongli/tql.png",
+      "detail": "tql"
+    },
+    {
+      "brandId": "zongli",
+      "name": "鲜品屋府宴粽",
+      "price": "49-358元",
+      "image": "/images/zongli/fyz.png",
+      "detail": "fyz"
     },
     {
       "brandId": "ganen",
@@ -27,6 +193,7 @@
       "image": "/images/ganen/ga200.png",
       "detail": "ga200"
     },
+    
     {
       "brandId": "ganen",
       "name": "感恩册300型",
@@ -35,11 +202,476 @@
       "detail": "ga300"
     },
     {
+      "brandId": "ganen",
+      "name": "感恩册500型",
+      "price": "500元",
+      "image": "/images/ganen/ga500.png",
+      "detail": "ga500"
+    },
+    {
+      "brandId": "ganen",
+      "name": "感恩册800型",
+      "price": "800元",
+      "image": "/images/ganen/ga800.png",
+      "detail": "ga800"
+    },
+    {
+      "brandId": "ganen",
+      "name": "感恩册1000型",
+      "price": "1000元",
+      "image": "/images/ganen/ga1000.png",
+      "detail": "ga1000"
+    },
+    {
+      "brandId": "ganen",
+      "name": "感恩册1500型",
+      "price": "1500元",
+      "image": "/images/ganen/ga1500.png",
+      "detail": "ga1500"
+    },
+    {
+      "brandId": "ganen",
+      "name": "感恩册2000型",
+      "price": "2000元",
+      "image": "/images/ganen/ga2000.png",
+      "detail": "ga2000"
+    },
+    {
+      "brandId": "ganen",
+      "name": "感恩册3000型",
+      "price": "3000元",
+      "image": "/images/ganen/ga3000.png",
+      "detail": "ga3000"
+    },
+    {
+      "brandId": "yuexiang",
+      "name": "悦享册300型",
+      "price": "300元",
+      "image": "/images/yuexiang/yx300.png",
+      "detail": "yx300"
+    },
+    
+    {
       "brandId": "yuexiang",
       "name": "悦享册500型",
       "price": "500元",
       "image": "/images/yuexiang/yx500.png",
       "detail": "yx500"
+    },
+    {
+      "brandId": "yuexiang",
+      "name": "悦享册800型",
+      "price": "800元",
+      "image": "/images/yuexiang/yx800.png",
+      "detail": "yx800"
+    },
+    {
+      "brandId": "yuexiang",
+      "name": "悦享册1000型",
+      "price": "1000元",
+      "image": "/images/yuexiang/yx1000.png",
+      "detail": "yx1000"
+    },
+    {
+      "brandId": "yuexiang",
+      "name": "悦享册1500型",
+      "price": "1500元",
+      "image": "/images/yuexiang/yx1500.png",
+      "detail": "yx1500"
+    },
+    {
+      "brandId": "yuexiang",
+      "name": "悦享册2000型",
+      "price": "2000元",
+      "image": "/images/yuexiang/yx2000.png",
+      "detail": "yx2000"
+    },
+    {
+      "brandId": "yuexiang",
+      "name": "悦享册3000型",
+      "price": "3000元",
+      "image": "/images/yuexiang/yx3000.png",
+      "detail": "yx3000"
+    },
+    {
+      "brandId": "yuexiang",
+      "name": "悦享册5000型",
+      "price": "5000元",
+      "image": "/images/yuexiang/yx5000.png",
+      "detail": "yx5000"
+    },
+    {
+      "brandId": "jixiang",
+      "name": "集祥礼200型",
+      "price": "200元",
+      "image": "/images/jixiang/jx200.png",
+      "detail": "jx200"
+    },
+    {
+      "brandId": "jixiang",
+      "name": "集祥礼300型",
+      "price": "300元",
+      "image": "/images/jixiang/jx300.png",
+      "detail": "jx300"
+    },
+    {
+      "brandId": "jixiang",
+      "name": "集祥礼500型",
+      "price": "500元",
+      "image": "/images/jixiang/jx500.png",
+      "detail": "jx500"
+    },
+    {
+      "brandId": "jixiang",
+      "name": "集祥礼800型",
+      "price": "800元",
+      "image": "/images/jixiang/jx800.png",
+      "detail": "jx800"
+    },
+    {
+      "brandId": "jixiang",
+      "name": "集祥礼1000型",
+      "price": "1000元",
+      "image": "/images/jixiang/jx1000.png",
+      "detail": "jx1000"
+    },
+    {
+      "brandId": "jixiang",
+      "name": "集祥礼1500型",
+      "price": "1500元",
+      "image": "/images/jixiang/jx1500.png",
+      "detail": "jx1500"
+    },
+    {
+      "brandId": "jixiang",
+      "name": "集祥礼2000型",
+      "price": "2000元",
+      "image": "/images/jixiang/jx2000.png",
+      "detail": "jx2000"
+    },
+    {
+      "brandId": "fuli",
+      "name": "福礼298型",
+      "price": "298元",
+      "image": "/images/fuli/fl298.png",
+      "detail": "fl298"
+    },
+    {
+      "brandId": "fuli",
+      "name": "福礼398型",
+      "price": "398元",
+      "image": "/images/fuli/fl398.png",
+      "detail": "fl398"
+    },
+    {
+      "brandId": "fuli",
+      "name": "福礼598型",
+      "price": "598元",
+      "image": "/images/fuli/fl598.png",
+      "detail": "fl598"
+    },
+    {
+      "brandId": "fuli",
+      "name": "福礼898型",
+      "price": "898元",
+      "image": "/images/fuli/fl898.png",
+      "detail": "fl898"
+    },
+    {
+      "brandId": "fuli",
+      "name": "福礼1198型",
+      "price": "1198元",
+      "image": "/images/fuli/fl1198.png",
+      "detail": "fl1198"
+    },
+    {
+      "brandId": "fuli",
+      "name": "福礼2198型",
+      "price": "2198元",
+      "image": "/images/fuli/fl2198.png",
+      "detail": "fl2198"
+    },
+    {
+      "brandId": "fuli",
+      "name": "福礼3198型",
+      "price": "3198元",
+      "image": "/images/fuli/fl3198.png",
+      "detail": "fl3198"
+    },
+    {
+      "brandId": "fuli",
+      "name": "福礼5198型",
+      "price": "5198元",
+      "image": "/images/fuli/fl5198.png",
+      "detail": "fl5198"
+    },
+    {
+      "brandId": "fuli",
+      "name": "福礼8888型",
+      "price": "8888元",
+      "image": "/images/fuli/fl8888.png",
+      "detail": "fl8888"
+    },
+    {
+      "brandId": "zhongyi",
+      "name": "中意500型",
+      "price": "500元",
+      "image": "/images/zhongyi/zy500.png",
+      "detail": "zy500"
+    },
+    {
+      "brandId": "zhongyi",
+      "name": "中意800型",
+      "price": "800元",
+      "image": "/images/zhongyi/zy800.png",
+      "detail": "zy800"
+    },
+    {
+      "brandId": "zhongyi",
+      "name": "中意1000型",
+      "price": "1000元",
+      "image": "/images/zhongyi/zy1000.png",
+      "detail": "zy1000"
+    },
+    {
+      "brandId": "zhongyi",
+      "name": "中意1500型",
+      "price": "1500元",
+      "image": "/images/zhongyi/zy1500.png",
+      "detail": "zy1500"
+    },
+    {
+      "brandId": "zhongyi",
+      "name": "中意2000型",
+      "price": "2000元",
+      "image": "/images/zhongyi/zy2000.png",
+      "detail": "zy2000"
+    },
+    {
+      "brandId": "zhongyi",
+      "name": "中意3000型",
+      "price": "3000元",
+      "image": "/images/zhongyi/zy3000.png",
+      "detail": "zy3000"
+    },
+    {
+      "brandId": "zhongyi",
+      "name": "中意5000型",
+      "price": "5000元",
+      "image": "/images/zhongyi/zy5000.png",
+      "detail": "zy5000"
+    },
+    {
+      "brandId": "zhongyi",
+      "name": "中意8000型",
+      "price": "8000元",
+      "image": "/images/zhongyi/zy8000.png",
+      "detail": "zy8000"
+    },
+    {
+      "brandId": "zhongyi",
+      "name": "中意10000型",
+      "price": "10000元",
+      "image": "/images/zhongyi/zy10000.png",
+      "detail": "zy10000"
+    },
+    {
+      "brandId": "yadan",
+      "name": "鲜品屋",
+      "price": "59-119元",
+      "image": "/images/yadan/xpw.png",
+      "detail": "xpw"
+    },
+    {
+      "brandId": "yadan",
+      "name": "萌宝鸭",
+      "price": "56-128元",
+      "image": "/images/yadan/mby.png",
+      "detail": "mby"
+    },
+    {
+      "brandId": "yadan",
+      "name": "秦邮牌",
+      "price": "48-80元",
+      "image": "/images/yadan/qy.png",
+      "detail": "qy"
+    },
+    {
+      "brandId": "yadan",
+      "name": "戏水塘",
+      "price": "18-258元",
+      "image": "/images/yadan/xst.png",
+      "detail": "xst"
+    },
+    {
+      "brandId": "yadan",
+      "name": "三宝",
+      "price": "55-248元",
+      "image": "/images/yadan/sbyd.png",
+      "detail": "sbyd"
+    },
+    
+    {
+      "brandId": "jgls",
+      "name": "中粮坚果休食",
+      "price": "13.5-298元",
+      "image": "/images/jgls/zl.png",
+      "detail": "zl"
+    },
+    {
+      "brandId": "jgls",
+      "name": "臻味",
+      "price": "108-698元",
+      "image": "/images/jgls/zw.png",
+      "detail": "zw"
+    },
+    {
+      "brandId": "jgls",
+      "name": "来伊份",
+      "price": "118-598元",
+      "image": "/images/jgls/lyf.png",
+      "detail": "lyf"
+    },
+    {
+      "brandId": "jgls",
+      "name": "三只松鼠",
+      "price": "88-428元",
+      "image": "/images/jgls/szss2.png",
+      "detail": "szss2"
+    },
+    {
+      "brandId": "jgls",
+      "name": "良品铺子",
+      "price": "98-188元",
+      "image": "/images/jgls/lppz2.png",
+      "detail": "lppz2"
+    },
+    {
+      "brandId": "jgls",
+      "name": "周黑鸭",
+      "price": "68-258元",
+      "image": "/images/jgls/zhy.png",
+      "detail": "zhy"
+    },
+    {
+      "brandId": "jgls",
+      "name": "乐品上海",
+      "price": "268-799元",
+      "image": "/images/jgls/lpsh.png",
+      "detail": "lpsh"
+    },
+    {
+      "brandId": "jgls",
+      "name": "歌帝梵",
+      "price": "20-888元",
+      "image": "/images/jgls/gdf.png",
+      "detail": "gdf"
+    },
+    {
+      "brandId": "shengxian",
+      "name": "中粮万威客",
+      "price": "228-818元",
+      "image": "/images/shengxian/wwk.png",
+      "detail": "wwk"
+    },
+    {
+      "brandId": "shengxian",
+      "name": "中粮家佳康",
+      "price": "228-818元",
+      "image": "/images/shengxian/jjk.png",
+      "detail": "jjk"
+    },
+    {
+      "brandId": "shengxian",
+      "name": "中粮凌鲜",
+      "price": "269-799元",
+      "image": "/images/shengxian/lx.png",
+      "detail": "lx"
+    },
+    {
+      "brandId": "shengxian",
+      "name": "紫光园",
+      "price": "119-338元",
+      "image": "/images/yadan/zgy2.png",
+      "detail": "zgy2"
+    },
+    {
+      "brandId": "shengxian",
+      "name": "天福号",
+      "price": "188-798元",
+      "image": "/images/yadan/tfh.png",
+      "detail": "tfh"
+    },
+    {
+      "brandId": "shengxian",
+      "name": "中茂和牛",
+      "price": "798-1298元",
+      "image": "/images/shengxian/zmhn.png",
+      "detail": "zmhn"
+    },
+    {
+      "brandId": "shengxian",
+      "name": "中茂滩羊",
+      "price": "498-1998元",
+      "image": "/images/shengxian/zmty.png",
+      "detail": "zmty"
+    },
+    {
+      "brandId": "shengxian",
+      "name": "中茂黄牛",
+      "price": "498-998元",
+      "image": "/images/shengxian/zmhn2.png",
+      "detail": "zmhn2"
+    },
+    {
+      "brandId": "shengxian",
+      "name": "中茂海鲜",
+      "price": "398-2998元",
+      "image": "/images/shengxian/zmhx.png",
+      "detail": "zmhx"
+    },
+    
+    {
+      "brandId": "mmly",
+      "name": "防暑降温大礼包",
+      "price": "98-288元",
+      "image": "/images/mmly/fsjw.png",
+      "detail": "fsjw"
+    },
+    {
+      "brandId": "mmly",
+      "name": "中粮到身边",
+      "price": "238-428元",
+      "image": "/images/mmly/dsb.png",
+      "detail": "dsb"
+    },
+    {
+      "brandId": "mmly",
+      "name": "福临门油",
+      "price": "19.9-368元",
+      "image": "/images/mmly/flm.png",
+      "detail": "flm"
+    },
+    {
+      "brandId": "mmly",
+      "name": "中粮米面",
+      "price": "16.9-220元",
+      "image": "/images/mmly/mm.png",
+      "detail": "mm"
+    },
+    {
+      "brandId": "mmly",
+      "name": "云南茶叶",
+      "price": "158-1588元",
+      "image": "/images/cyyp/yncy.png",
+      "detail": "yncy"
+    },
+    {
+      "brandId": "mmly",
+      "name": "中茶",
+      "price": "49.9-3550元",
+      "image": "/images/cyyp/zc.png",
+      "detail": "zc"
     }
   ]
 }
