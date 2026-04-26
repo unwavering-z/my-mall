@@ -29,6 +29,30 @@ const displayProducts = productData.items.filter(item => item.brandId === brandI
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{currentBrand.name} - 2026端午团购</title>
+<script is:inline>
+  // 1. 监听点击，记录位置
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('.product-link');
+    if (link) {
+      sessionStorage.setItem('scroll-pos-' + window.location.pathname, window.scrollY);
+    }
+  });
+
+  // 2. 返回时恢复位置
+  window.addEventListener('load', () => {
+    const savedPos = sessionStorage.getItem('scroll-pos-' + window.location.pathname);
+    if (savedPos !== null) {
+      // 关键：给微信一点点缓冲时间（100ms），等它把 480px 布局渲染好
+      setTimeout(() => {
+        window.scrollTo({
+          top: parseInt(savedPos, 10),
+          behavior: 'instant' // 立即跳转，不要平滑滚动
+        });
+        sessionStorage.removeItem('scroll-pos-' + window.location.pathname);
+      }, 100); 
+    }
+  });
+</script>
 </head>
 <body>
     <div class="festival-banner" id="countdown-banner">
