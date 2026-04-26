@@ -17,26 +17,29 @@ const displayProducts = productData.items.filter(item => item.brandId === curren
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{currentBrand.name} - 2026端午团购</title>
 <script is:inline>
-      // 1. 监听点击产品卡片的动作
-      document.addEventListener('click', (e) => {
-        const link = e.target.closest('.product-link');
-        if (link) {
-          // 在跳转前，把当前的滚动高度存入 sessionStorage
-          sessionStorage.setItem('last-scroll-pos', window.scrollY);
-        }
-      });
+  // 1. 监听点击，记录位置
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('.product-link');
+    if (link) {
+      sessionStorage.setItem('scroll-pos-' + window.location.pathname, window.scrollY);
+    }
+  });
 
-      // 2. 页面加载完成后，检查是否有存好的高度
-      window.addEventListener('load', () => {
-        const savedPos = sessionStorage.getItem('last-scroll-pos');
-        if (savedPos !== null) {
-          // 恢复位置
-          window.scrollTo(0, parseInt(savedPos, 10));
-          // 恢复后最好清除掉，防止下次刷新也跳
-          sessionStorage.removeItem('last-scroll-pos');
-        }
-      });
-    </script>
+  // 2. 返回时恢复位置
+  window.addEventListener('load', () => {
+    const savedPos = sessionStorage.getItem('scroll-pos-' + window.location.pathname);
+    if (savedPos !== null) {
+      // 关键：给微信一点点缓冲时间（100ms），等它把 480px 布局渲染好
+      setTimeout(() => {
+        window.scrollTo({
+          top: parseInt(savedPos, 10),
+          behavior: 'instant' // 立即跳转，不要平滑滚动
+        });
+        sessionStorage.removeItem('scroll-pos-' + window.location.pathname);
+      }, 100); 
+    }
+  });
+</script>
 </head>
 <body>
 <div class="festival-banner" id="countdown-banner">
