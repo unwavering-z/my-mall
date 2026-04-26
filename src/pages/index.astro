@@ -16,6 +16,27 @@ const displayProducts = productData.items.filter(item => item.brandId === curren
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{currentBrand.name} - 2026端午团购</title>
+<script is:inline>
+      // 1. 监听点击产品卡片的动作
+      document.addEventListener('click', (e) => {
+        const link = e.target.closest('.product-link');
+        if (link) {
+          // 在跳转前，把当前的滚动高度存入 sessionStorage
+          sessionStorage.setItem('last-scroll-pos', window.scrollY);
+        }
+      });
+
+      // 2. 页面加载完成后，检查是否有存好的高度
+      window.addEventListener('load', () => {
+        const savedPos = sessionStorage.getItem('last-scroll-pos');
+        if (savedPos !== null) {
+          // 恢复位置
+          window.scrollTo(0, parseInt(savedPos, 10));
+          // 恢复后最好清除掉，防止下次刷新也跳
+          sessionStorage.removeItem('last-scroll-pos');
+        }
+      });
+    </script>
 </head>
 <body>
 <div class="festival-banner" id="countdown-banner">
