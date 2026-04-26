@@ -10,6 +10,8 @@ body {
     min-height: 100vh;
     box-shadow: 0 0 20px rgba(0,0,0,0.1); /* 给两侧加点阴影，看起来更像手机 */
     position: relative;
+    scroll-behavior: auto !important; /* 强制禁用平滑滚动恢复，提高成功率 */
+    overflow-x: hidden; /* 配合 max-width，防止左右晃动 */
 }
 
 /* 顶部 Banner 真全屏 */
