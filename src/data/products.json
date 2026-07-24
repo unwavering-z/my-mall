@@ -1,191 +1,227 @@
 {
   "festival": {
-  "name": "2026端午粽情",
-  "targetDate": "2026-06-19",
-  "themeColor": "#2e7d32"
+  "name": "2026月满中秋",
+  "targetDate": "2026-09-26",
+  "themeColor": "#E15501"
   },
   "brands": [
-    { "id": "zongli", "name": "品牌粽礼", "slug": "index" },
+    { "id": "yuebing", "name": "品牌月饼", "slug": "index" },
+    
     { "id": "ganen", "name": "感恩册", "slug": "ganen" },
     { "id": "yuexiang", "name": "悦享册", "slug": "yuexiang" },
     { "id": "jixiang", "name": "集祥礼", "slug": "jixiang" },
     { "id": "fuli", "name": "福礼", "slug": "fuli" },
     { "id": "zhongyi", "name": "中意礼", "slug": "zhongyili" },
-    
+    { "id": "dazhaxie", "name": "金秋蟹礼", "slug": "dazhaxxie" },
     { "id": "jgls", "name": "坚果零食", "slug": "jgls" },
     { "id": "shengxian", "name": "生鲜熟食", "slug": "shengxian" },
-    { "id": "mmly", "name": "米面粮油", "slug": "mmly" },
-    { "id": "yadan", "name": "鸭蛋礼盒", "slug": "yadan" }
+    { "id": "mmly", "name": "米面粮油", "slug": "mmly" }
+    
   ],
   "items": [
     {
-      "brandId": "zongli",
-      "name": "五芳斋",
-      "price": "59-398元",
-      "image": "/images/zongli/wfz.png",
-      "detail": "wfz"
-    },
-    {
-      "brandId": "zongli",
-      "name": "星巴克",
-      "price": "198元",
-      "image": "/images/zongli/xbk.png",
-      "detail": "xbk"
-    },
-    {
-      "brandId": "zongli",
-      "name": "元祖",
-      "price": "198-458元",
-      "image": "/images/zongli/yz.png",
-      "detail": "yz"
-    },
-    {
-      "brandId": "zongli",
-      "name": "锋味派",
-      "price": "168-398元",
-      "image": "/images/zongli/fwp.png",
-      "detail": "fwp"
-    },
-    {
-      "brandId": "zongli",
-      "name": "榴芒一刻",
-      "price": "39.9-238元",
-      "image": "/images/zongli/lmyk.png",
-      "detail": "lmyk"
-    },
-    {
-      "brandId": "zongli",
+      "brandId": "yuebing",
       "name": "香港美心",
-      "price": "188-488元",
-      "image": "/images/zongli/mx.png",
+      "price": "168-498元",
+      "image": "/images/yuebing/mx.png",
       "detail": "mx"
     },
     {
-      "brandId": "zongli",
-      "name": "香港锦华",
-      "price": "68-428元",
-      "image": "/images/zongli/jh.png",
-      "detail": "jh"
+      "brandId": "yuebing",
+      "name": "星巴克",
+      "price": "198元",
+      "image": "/images/yuebing/xbk.png",
+      "detail": "xbk"
     },
     {
-      "brandId": "zongli",
-      "name": "稻香村",
-      "price": "39-359元",
-      "image": "/images/zongli/dxc.png",
-      "detail": "dxc"
+      "brandId": "yuebing",
+      "name": "哈根达斯",
+      "price": "318-999元",
+      "image": "/images/yuebing/hgds.png",
+      "detail": "hgds"
+    },
+
+    {
+      "brandId": "yuebing",
+      "name": "元祖",
+      "price": "188-490元",
+      "image": "/images/yuebing/yz.png",
+      "detail": "yz"
     },
     {
-      "brandId": "zongli",
-      "name": "广州酒家",
-      "price": "68-398元",
-      "image": "/images/zongli/gzjj.png",
-      "detail": "gzjj"
+      "brandId": "yuebing",
+      "name": "迪士尼",
+      "price": "79.8-498元",
+      "image": "/images/yuebing/dsn.png",
+      "detail": "dsn"
     },
     {
-      "brandId": "zongli",
-      "name": "紫光园",
-      "price": "68-258元",
-      "image": "/images/zongli/zgy.png",
-      "detail": "zgy"
-    },
-    {
-      "brandId": "zongli",
-      "name": "大董",
-      "price": "158-998元",
-      "image": "/images/zongli/dd.png",
-      "detail": "dd"
-    },
-    {
-      "brandId": "zongli",
-      "name": "诸老大",
-      "price": "69-458元",
-      "image": "/images/zongli/zld.png",
-      "detail": "zld"
-    },
-    {
-      "brandId": "zongli",
+      "brandId": "yuebing",
       "name": "故宫朕的心意",
-      "price": "199-299元",
-      "image": "/images/zongli/gg.png",
+      "price": "169-528元",
+      "image": "/images/yuebing/gg.png",
       "detail": "gg"
     },
     {
-      "brandId": "zongli",
-      "name": "真真老老",
-      "price": "59-538元",
-      "image": "/images/zongli/zzll.png",
-      "detail": "zzll"
+      "brandId": "yuebing",
+      "name": "榴芒一刻",
+      "price": "79.8-398元",
+      "image": "/images/yuebing/lmyk.png",
+      "detail": "lmyk"
     },
     {
-      "brandId": "zongli",
-      "name": "荃盛",
-      "price": "65-458元",
-      "image": "/images/zongli/qs.png",
-      "detail": "qs"
+      "brandId": "yuebing",
+      "name": "锋味派",
+      "price": "188-498元",
+      "image": "/images/yuebing/fwp.png",
+      "detail": "fwp"
+    },
+    
+    
+    {
+      "brandId": "yuebing",
+      "name": "香港锦华",
+      "price": "68-398元",
+      "image": "/images/yuebing/jh.png",
+      "detail": "jh"
     },
     {
-      "brandId": "zongli",
+      "brandId": "yuebing",
+      "name": "半岛",
+      "price": "128-1088元",
+      "image": "/images/yuebing/bd.png",
+      "detail": "bd"
+    },
+    {
+      "brandId": "yuebing",
+      "name": "稻香村",
+      "price": "68-488元",
+      "image": "/images/yuebing/dxc.png",
+      "detail": "dxc"
+    },
+    {
+      "brandId": "yuebing",
+      "name": "荣诚月饼",
+      "price": "68-398元",
+      "image": "/images/yuebing/rc.png",
+      "detail": "rc"
+    },
+    {
+      "brandId": "yuebing",
+      "name": "元朗荣华",
+      "price": "110-499元",
+      "image": "/images/yuebing/ylrh.png",
+      "detail": "ylrh"
+    },
+    {
+      "brandId": "yuebing",
+      "name": "广州酒家",
+      "price": "68-398元",
+      "image": "/images/yuebing/gzjj.png",
+      "detail": "gzjj"
+    },
+    {
+      "brandId": "yuebing",
+      "name": "紫光园",
+      "price": "68-258元",
+      "image": "/images/yuebing/zgy.png",
+      "detail": "zgy"
+    },
+    {
+      "brandId": "yuebing",
       "name": "立家",
-      "price": "68-668元",
-      "image": "/images/zongli/lj.png",
+      "price": "88-468元",
+      "image": "/images/yuebing/lj.png",
       "detail": "lj"
     },
+    
+    
     {
-      "brandId": "zongli",
-      "name": "良品铺子",
-      "price": "78-228元",
-      "image": "/images/zongli/lppz.png",
-      "detail": "lppz"
+      "brandId": "yuebing",
+      "name": "荃盛",
+      "price": "108-468元",
+      "image": "/images/yuebing/qs.png",
+      "detail": "qs"
     },
+    
     {
-      "brandId": "zongli",
+      "brandId": "yuebing",
       "name": "三只松鼠",
-      "price": "88-288元",
-      "image": "/images/zongli/szss.png",
+      "price": "78-268元",
+      "image": "/images/yuebing/szss.png",
       "detail": "szss"
     },
+    
     {
-      "brandId": "zongli",
+      "brandId": "yuebing",
+      "name": "良品铺子",
+      "price": "68-398元",
+      "image": "/images/yuebing/lppz.png",
+      "detail": "lppz"
+    },
+   {
+      "brandId": "yuebing",
+      "name": "大董",
+      "price": "228-498元",
+      "image": "/images/yuebing/dd.png",
+      "detail": "dd"
+    },
+        
+    {
+      "brandId": "yuebing",
+      "name": "鲜品屋",
+      "price": "39-498元",
+      "image": "/images/yuebing/xpw.png",
+      "detail": "xpw"
+    },
+    {
+      "brandId": "yuebing",
       "name": "华美",
       "price": "58-258元",
-      "image": "/images/zongli/hm.png",
+      "image": "/images/yuebing/hm.png",
       "detail": "hm"
     },
+     
+
     {
-      "brandId": "zongli",
-      "name": "知味观",
-      "price": "49-418元",
-      "image": "/images/zongli/zwg.png",
-      "detail": "zwg"
+      "brandId": "dazhaxie",
+      "name": "蟹状元",
+      "price": "468-5688型",
+      "image": "/images/dazhaxie/xzy.png",
+      "detail": "xzy"
+    },
+
+    {
+      "brandId": "dazhaxie",
+      "name": "蟹兴阁",
+      "price": "588-6888型",
+      "image": "/images/dazhaxie/xxg.png",
+      "detail": "xxg"
+    },
+
+    {
+      "brandId": "dazhaxie",
+      "name": "阳澄湖牌",
+      "price": "588-6888型",
+      "image": "/images/dazhaxie/ychp.png",
+      "detail": "ychp"
     },
     {
-      "brandId": "zongli",
-      "name": "红船",
-      "price": "78-318元",
-      "image": "/images/zongli/hc.png",
-      "detail": "hc"
+      "brandId": "dazhaxie",
+      "name": "阳澄好记",
+      "price": "598-3988型",
+      "image": "/images/dazhaxie/ychj.png",
+      "detail": "ychj"
     },
     {
-      "brandId": "zongli",
-      "name": "COSTA",
-      "price": "168-228元",
-      "image": "/images/zongli/costa.png",
-      "detail": "costa"
+      "brandId": "dazhaxie",
+      "name": "鲜品屋",
+      "price": "599-4999型",
+      "image": "/images/dazhaxie/xpw2.png",
+      "detail": "xpw2"
     },
-    {
-      "brandId": "zongli",
-      "name": "同庆楼",
-      "price": "68-288元",
-      "image": "/images/zongli/tql.png",
-      "detail": "tql"
-    },
-    {
-      "brandId": "zongli",
-      "name": "鲜品屋府宴粽",
-      "price": "49-358元",
-      "image": "/images/zongli/fyz.png",
-      "detail": "fyz"
-    },
+
+
     {
       "brandId": "ganen",
       "name": "感恩册200型",
@@ -475,41 +511,7 @@
       "image": "/images/zhongyi/zy10000.png",
       "detail": "zy10000"
     },
-    {
-      "brandId": "yadan",
-      "name": "鲜品屋",
-      "price": "59-119元",
-      "image": "/images/yadan/xpw.png",
-      "detail": "xpw"
-    },
-    {
-      "brandId": "yadan",
-      "name": "萌宝鸭",
-      "price": "56-128元",
-      "image": "/images/yadan/mby.png",
-      "detail": "mby"
-    },
-    {
-      "brandId": "yadan",
-      "name": "秦邮牌",
-      "price": "48-80元",
-      "image": "/images/yadan/qy.png",
-      "detail": "qy"
-    },
-    {
-      "brandId": "yadan",
-      "name": "戏水塘",
-      "price": "18-258元",
-      "image": "/images/yadan/xst.png",
-      "detail": "xst"
-    },
-    {
-      "brandId": "yadan",
-      "name": "三宝",
-      "price": "55-248元",
-      "image": "/images/yadan/sbyd.png",
-      "detail": "sbyd"
-    },
+    
     
     {
       "brandId": "jgls",
@@ -520,17 +522,17 @@
     },
     {
       "brandId": "jgls",
-      "name": "臻味",
-      "price": "108-698元",
-      "image": "/images/jgls/zw.png",
-      "detail": "zw"
+      "name": "歌帝梵",
+      "price": "20-888元",
+      "image": "/images/jgls/gdf.png",
+      "detail": "gdf"
     },
     {
       "brandId": "jgls",
-      "name": "来伊份",
-      "price": "118-598元",
-      "image": "/images/jgls/lyf.png",
-      "detail": "lyf"
+      "name": "臻味",
+      "price": "89-598元",
+      "image": "/images/jgls/zw.png",
+      "detail": "zw"
     },
     {
       "brandId": "jgls",
@@ -548,11 +550,19 @@
     },
     {
       "brandId": "jgls",
-      "name": "周黑鸭",
-      "price": "68-258元",
-      "image": "/images/jgls/zhy.png",
-      "detail": "zhy"
+      "name": "来伊份",
+      "price": "118-598元",
+      "image": "/images/jgls/lyf.png",
+      "detail": "lyf"
     },
+    {
+      "brandId": "jgls",
+      "name": "王小卤",
+      "price": "98-298元",
+      "image": "/images/jgls/wxl.png",
+      "detail": "wxl"
+    },
+    
     {
       "brandId": "jgls",
       "name": "乐品上海",
@@ -562,10 +572,17 @@
     },
     {
       "brandId": "jgls",
-      "name": "歌帝梵",
-      "price": "20-888元",
-      "image": "/images/jgls/gdf.png",
-      "detail": "gdf"
+      "name": "周黑鸭",
+      "price": "68-258元",
+      "image": "/images/jgls/zhy.png",
+      "detail": "zhy"
+    },
+    {
+      "brandId": "jgls",
+      "name": "紫燕百味鸡",
+      "price": "69-308元",
+      "image": "/images/jgls/zybwj.png",
+      "detail": "zybwj"
     },
     {
       "brandId": "shengxian",
@@ -576,13 +593,6 @@
     },
     {
       "brandId": "shengxian",
-      "name": "中粮家佳康",
-      "price": "228-818元",
-      "image": "/images/shengxian/jjk.png",
-      "detail": "jjk"
-    },
-    {
-      "brandId": "shengxian",
       "name": "中粮凌鲜",
       "price": "269-799元",
       "image": "/images/shengxian/lx.png",
@@ -590,16 +600,24 @@
     },
     {
       "brandId": "shengxian",
+      "name": "中粮家佳康",
+      "price": "228-818元",
+      "image": "/images/shengxian/jjk.png",
+      "detail": "jjk"
+    },
+    
+    {
+      "brandId": "shengxian",
       "name": "紫光园",
       "price": "119-338元",
-      "image": "/images/yadan/zgy2.png",
+      "image": "/images/shengxian/zgy2.png",
       "detail": "zgy2"
     },
     {
       "brandId": "shengxian",
       "name": "天福号",
       "price": "188-798元",
-      "image": "/images/yadan/tfh.png",
+      "image": "/images/shengxian/tfh.png",
       "detail": "tfh"
     },
     {

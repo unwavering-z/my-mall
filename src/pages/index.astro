@@ -4,7 +4,7 @@ import productData from '../data/products.json';
 import '../styles/mall.css';
 const { festival } = productData;
 // 2. 定义当前品牌（首页默认是粽礼）
-const currentBrandId = "zongli";
+const currentBrandId = "yuebing";
 const currentBrand = productData.brands.find(b => b.id === currentBrandId);
 
 // 3. 自动筛选出属于“感恩册”的产品
@@ -15,11 +15,11 @@ const displayProducts = productData.items.filter(item => item.brandId === curren
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{currentBrand.name} - 2026端午团购</title>
+    <title>{currentBrand.name} - 2026中秋团购</title>
 </head>
 <body>
 <div class="festival-banner" id="countdown-banner">
-  <span class="festival-name">🏮 {festival.name}</span>
+  <span class="festival-name">🥮 {festival.name}</span>
   <span class="countdown-text">
     距节日还有 <strong id="days-count">--</strong> 天
   </span>
