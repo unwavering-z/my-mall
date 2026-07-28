@@ -215,6 +215,13 @@
     },
     {
       "brandId": "dazhaxie",
+      "name": "蟹满堂",
+      "price": "498-5888型",
+      "image": "/images/dazhaxie/xmt.png",
+      "detail": "xmt"
+    },
+    {
+      "brandId": "dazhaxie",
       "name": "阳澄好记",
       "price": "598-3988型",
       "image": "/images/dazhaxie/ychj.png",
